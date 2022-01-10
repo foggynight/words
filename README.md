@@ -1,5 +1,19 @@
 # words
 
+Get a list of words and their counts from a file.
+
+
+## Installation
+
+    make
+    make install
+
+
+## Usage
+
+    words FILE...
+
+
 ## License
 
 Copyright (C) 2022 Robert Coffey
