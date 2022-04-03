@@ -1,6 +1,6 @@
 # words
 
-Get a list of words and their counts from a file.
+Print wordlist and their counts.
 
 
 ## Installation
@@ -11,7 +11,9 @@ Get a list of words and their counts from a file.
 
 ## Usage
 
-    words FILE...
+    words
+
+Input is read from stdin.
 
 
 ## License

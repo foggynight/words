@@ -1,4 +1,4 @@
--- words.hs - print wordlist and their counts from stdin
+-- words.hs - print wordlist and their counts
 -- Copyright (C) 2022 Robert Coffey
 -- Released under the GPLv3.
 
