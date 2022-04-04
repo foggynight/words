@@ -11,7 +11,7 @@ wordList :: String -> [[String]]
 wordList str = group . sort $ words str
 
 wordCount :: [[String]] -> [(String, Int)]
-wordCount lst = zip (map head lst) (map length lst)
+wordCount lst = [(head x, length x) | x <- lst]
 
 wordString :: [(String, Int)] -> String
 wordString lst = unlines $ map (\e -> (fst e) ++ "\t" ++ (show . snd $ e)) lst
