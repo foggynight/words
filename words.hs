@@ -27,7 +27,7 @@ main = do
   args <- getArgs
   if length args > 0
     then do
-      str <- liftM countWords $ liftM concat $ mapM readFile args
+      str <- liftM (countWords . concat) $ mapM readFile args
       putStr str
     else interact countWords
   return ()
