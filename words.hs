@@ -8,13 +8,13 @@ import Data.List
 import System.Environment
 
 wordList :: String -> [[String]]
-wordList str = group . sort $ words str
+wordList = group . sort . words
 
 wordCount :: [[String]] -> [(String, Int)]
 wordCount lst = [(head x, length x) | x <- lst]
 
 wordString :: [(String, Int)] -> String
-wordString lst = unlines $ map (\e -> (fst e) ++ "\t" ++ (show . snd $ e)) lst
+wordString = unlines . map (\e -> (fst e) ++ "\t" ++ (show . snd $ e))
 
 countWords :: String -> String
 countWords = wordString
