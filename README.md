@@ -1,6 +1,6 @@
 # words
 
-Print wordlist and their counts.
+Print wordlist and their counts for each file.
 
 
 ## Installation
@@ -11,9 +11,9 @@ Print wordlist and their counts.
 
 ## Usage
 
-    words
+    words [FILE]...
 
-Input is read from stdin.
+Should `FILE` be omitted, input is read from `stdin`.
 
 
 ## License
