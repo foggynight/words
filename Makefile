@@ -1,6 +1,6 @@
 .PHONY: all
 all:
-	ghc words.hs
+	ghc -O2 words.hs
 
 .PHONY: install
 install:
